@@ -1,0 +1,56 @@
+<div class="action-block">
+    <button type="button" class="addBtn" (click)="openProductForm()">ДОДАТИ ПРОДУКТ</button>
+    <form *ngIf="openProduct" [formGroup]="productForm" (ngSubmit)="addProduct()">
+        <select formControlName="category" class="form-select w100 heightsmall">
+          <option [ngValue]="category" *ngFor="let category of adminCategories">{{category.name}}
+          </option>
+      </select>
+      <div class="blockTop">
+        <input formControlName="name" name="name" type="text" class="form-control" placeholder="*Назва">
+        <input formControlName="path" name="path" type="text" class="form-control" placeholder="*Шлях">
+      </div>
+      <input formControlName="ingredients" name="ingredients" type="text" class="form-control w100" placeholder="*Інгредієнти">
+      <div class="blockTop">
+        <input formControlName="weight" name="weight" type="number" class="form-control" placeholder="*Вага">
+        <input formControlName="price" name="price" type="number" class="form-control" placeholder="*Ціна">
+      </div>
+      <div class="blockBottom" *ngIf="!isUploaded">
+        <input class="form-control" type="file" id="formFile" (change)="upload($event)">
+      </div>
+      <div *ngIf="isUploaded" class="uploadImg">
+        <img [src]="valueByControl('imagePath')" alt="">
+        <button type="button" class="btnDelete" (click)="deleteImage()">delete</button>
+      </div>
+      <button [disabled]="productForm.invalid" type="submit" class="btnSave">Зберегти
+      </button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <td>№</td>
+          <td>Категорія</td>
+          <td>Назва</td>
+          <td>Інгредієнти</td>
+          <td>Вага</td>
+          <td>Ціна</td>
+          <td>Картинка</td>
+          <td>Дії</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of adminProducts">
+          <td class="number">№{{ product.id }}</td>
+          <td class="category">{{ product.category.name }}</td>
+          <td class="name">{{ product.name }}</td>
+          <td class="ingredients">{{ product.ingredients }}</td>
+          <td class="weight">{{ product. weight }} г</td>
+          <td class="price">{{ product.price }} грн</td>
+          <td class="widthimg"> <img [src]="product.imagePath" alt="" class="images"></td>
+          <td class="flex">
+            <button (click)="editProduct(product)">Pедагувати </button>
+            <button (click)="deleteProduct(product)" [disabled]="editStatus">Bидалити</button>
+          </td>
+      </tbody>
+    </table>
+  </div>
+  

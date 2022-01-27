@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "monosushi-4e38a": {
+      "hosting": {
+        "lesson8": [
+          "monosushi-4e38a"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "monosushi-4e38a"
+  }
+}

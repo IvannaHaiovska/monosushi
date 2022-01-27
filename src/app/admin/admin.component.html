@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="admin-block">
+        <div class="nav" [class.active] ="isDirectoryPath()">
+    <button class="nav-link" [routerLink]="[ 'action' ]" routerLinkActive="active" type="button">Акції</button>
+    <button class="nav-link" [routerLink]="[ 'category' ]" routerLinkActive="active" type="button">Категорії</button>
+    <button class="nav-link" [routerLink]="[ 'product' ]" routerLinkActive="active" type="button">Товари</button>
+    <button class="nav-link borderb" [routerLink]="[ 'order' ]" routerLinkActive="active"  type="button">Замовлення</button>
+  </div>
+  <button type="button" class="exit" [routerLink]="[ '/' ]">ВИХІД</button>
+    </div>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,154 @@
+.addBtn, .btnSave, .btnDelete {
+  background: white;
+  padding: 20px 71px;
+  font-family: 'RotondaC', sans-serif;
+  border: 2px solid #b5d8f7;
+  outline: none;
+  border-radius: .5em;
+  font-size: 20px;
+  line-height: 1.3em;
+}
+
+.addBtn:hover, .addBtn:focus {
+  background-color: #b5d8f7;
+}
+
+.uploadImg {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.uploadImg img {
+  width: 200px;
+  height: 150px;
+}
+
+.btnDelete {
+  width: 10%;
+  padding: 5px;
+  margin: 10px 0;
+  border: none;
+  background: rgba(221, 17, 17, 0.719);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 40px;
+  font-family: 'Rotonda', sans-serif;
+  color: #444444;
+}
+
+.bolder {
+  font-weight: 600;
+}
+
+thead td {
+  border-bottom: 2.5px solid #b5d8f7;
+  padding: 10px 0px 21px 0;
+  font-size: 20px;
+  line-height: 1.3em;
+}
+
+
+tbody tr {
+  border-bottom: 2px solid rgb(221, 221, 221);
+  font-size: 18px;
+  line-height: 1.1em;
+  height: 124px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-top: 25px;
+}
+
+
+.data {
+  width: 13%;
+}
+.name{
+  width: 11%;
+}
+.bolder {
+  font-weight: 600;
+  width: 29%;
+  color: black;
+}
+.width {
+  width: 36%;
+  font-size: 1.1em;
+  line-height: 1.3em;
+}
+.widthimg{
+  width: 11%;
+}
+.images {
+  width: 88%;
+}
+.flex button {
+  font-family: 'RotondaC', sans-serif;
+  font-size: 21px;
+  line-height: 1.6em;
+  color: #b5d8f7;
+  position: relative;
+  border: none;
+  outline: none;
+  background: none;
+  width: 110px;
+}
+.blockTop {
+  margin: 43px 0 20px;
+}
+
+input, textarea {
+  height: 67px;
+  border-radius: 0.5em;
+  border: 2px solid rgba(206, 206, 206, 0.877);
+  font-size: 1.1em;
+  padding-left: 29px;
+  width: 29%;
+  margin-right: 13px;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px 2px lightskyblue;
+  border: 2px solid lightskyblue;
+}
+
+#formFile, .description {
+  margin: 0 0;
+  padding-top: 17px;
+  width: 59%;
+  font-size: 1.2em;
+}
+.description{
+  height: 169px;
+  resize: none;
+  font-size: 1.5em;
+  margin-bottom: 21px;
+}
+.btnSave{
+  padding: 19px 111px;
+  margin-top: 22px;
+  margin-bottom: 37px;
+  background-color: #dcecfc;
+}
+.flex button:after {
+  display: block;
+  content: "";
+  background-color: lightskyblue;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  position: absolute;
+  transition: width .3s ease-in-out;
+}
+.flex button:hover:after,
+.flex button:focus:after {
+  width: 100%;
+}

@@ -1,0 +1,72 @@
+{
+  "categories": [
+    {
+      "name": "Роли",
+      "path": "rolls",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/monosushi-4e38a.appspot.com/o/images%2Fnav-img-rolls.svg?alt=media&token=8306efa3-1d66-4cb6-ba18-0bd92f1a4cfe",
+      "id": 1
+    },
+    {
+      "name": "Сети",
+      "path": "setu",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/monosushi-4e38a.appspot.com/o/images%2Fnav-img-sets.svg?alt=media&token=be755529-f103-4265-9642-78057301d3e3",
+      "id": 2
+    },
+    {
+      "name": "Напої",
+      "path": "napoyi",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/monosushi-4e38a.appspot.com/o/images%2Fnav-img-drinks.svg?alt=media&token=e47a6370-716b-4143-9bba-47c578de62c3",
+      "id": 3
+    },
+    {
+      "name": "Соуси",
+      "path": "sousi",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/monosushi-4e38a.appspot.com/o/images%2Fnav-img-sousi.svg?alt=media&token=d41d8590-d0bd-4ce5-9abf-d73c771e128c",
+      "id": 4
+    }
+  ],
+  "actions": [
+    {
+      "name": "Рол Тижня",
+      "title": "50% знижки на \"Рол тижня\"",
+      "date": "2022-01-27T11:34:27.193Z",
+      "description": "Щотижня діє знижка 50% на один з ролів у нашому меню.\n“Рол тижня” ви можете знайти на головній сторінці нашого сайту.\nЗнижка діє при мінімальній сумі замовлення 200 грн.\nЦя акція не поєднується з іншими акціями.\n",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/monosushi-4e38a.appspot.com/o/images%2Frol-tyzhnya-2-1-697x379.png?alt=media&token=d62ce522-c19d-4354-a6a8-f0c9a919a925",
+      "id": 1
+    },
+    {
+      "name": "Кожен п'ятий рол в подарунок",
+      "title": "\"3+1=5\"",
+      "date": "2022-01-26T13:29:10.932Z",
+      "description": "Замовляйте 4 роли та отримуйте ще 1 безкоштовно.\nЗамовляйте 8 та отримуйте ще 2 безкоштовно і так далі.\nБезкоштовним вважається рол з найменшою вартістю.\nЦя акція не поєднується з іншими акціями.",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/monosushi-4e38a.appspot.com/o/images%2F5-j-v-podarunok-01-697x379.png?alt=media&token=d3ebe412-6935-44e3-a1eb-e4c837cc8dcf",
+      "id": 2
+    },
+    {
+      "name": "Самовивіз",
+      "title": "Самовивіз",
+      "date": "2022-01-27T19:31:37.917Z",
+      "description": "Запечені моно макі з лососем у подарунок.\nВідсутність мінімальної суми замовлення.\nЧас очікування на замовлення до 30 хв.\nДля отримання акційного ролу у подарунок зберігається умова мінімальної суми замовлення 200 грн.",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/monosushi-4e38a.appspot.com/o/images%2F3.-samovyviz-01-scaled-697x379.jpg?alt=media&token=62b8dcd6-28c2-4e0b-9144-bc6d0c4fd36f",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "category": {
+        "name": "Роли",
+        "path": "rolls",
+        "imagePath": "https://firebasestorage.googleapis.com/v0/b/monosushi-4e38a.appspot.com/o/images%2Fnav-img-rolls.svg?alt=media&token=8306efa3-1d66-4cb6-ba18-0bd92f1a4cfe",
+        "id": 1
+      },
+      "name": "Філадельфія з лососем",
+      "path": "filadelfiya-z-lososem",
+      "ingredients": "Риc, крем сир, огірок, лосось",
+      "weight": 280,
+      "price": 174,
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/monosushi-4e38a.appspot.com/o/images%2F1.-filadelfiya-z-lososem.jpg.pagespeed.ce.axvTz8qDqj.jpg?alt=media&token=634a91e5-812c-42eb-a045-e2fe2e115a9c",
+      "count": null,
+      "id": 2
+    }
+  ]
+}

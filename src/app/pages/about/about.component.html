@@ -1,0 +1,149 @@
+<div class="container">
+  <div class="center-info">
+    <h2 class="title text-cut-2">Про нас</h2>
+  </div>
+  <div class="row rowsmall">
+    <div class="simple-page">
+      <h3 class="textStrong"><strong>Monosushi –</strong><strong> доставка неймовірно смачних суші у
+          Львові</strong><strong>.</strong>
+      </h3>
+      <p>Головний пріоритет – висока якість їжі та сервісу. Ми – команда професіоналів, яка щодня працює для<br>
+        Вас. Якість та Швидкість! – це два основних пріоритети в роботі команди. В першу чергу звичайно ж<br>
+        Якість. Суші готуються без затримок, одразу ж після Вашого замовлення. А завдяки сучасним технологіям та<br>
+        відповідальному навчанню працівників, свіжі страви можливо доставляти до 59 хв в 75% замовлень.</p>
+      <ul>
+        <li>висока якість їжі та сервісу</li>
+        <li>команда професіоналів</li>
+        <li>сучасні технології приготування</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row flexRow">
+    <div class="block-img">
+      <img src="https://monosushi.com.ua/wp-content/uploads/2020/10/about-img-1-568x568.jpg" alt="" class="imgLoaded">
+    </div>
+    <div class="block-left-info">
+      <div class="simple-page">
+        <h3>Привіт! Познайомимось?</h3>
+        <p>Monosushi – це доставка найсмачніших суші у Львові, яка була створена командою перфекціоністів. Двоє
+          друзів, які обожнюють роли вирішили створити продукт, якого їм не вистачало на ринку Львова. Продукт, в
+          якому ідеальним буде все: смак, упакування, сервіс і все це за лояльною ціною!</p>
+      </div>
+    </div>
+  </div>
+  <div class="row flexRow reverse">
+    <div class="block-img">
+      <img src="https://monosushi.com.ua/wp-content/uploads/2020/10/about-img-2-568x568.jpg" alt="">
+    </div>
+    <div class="block-right-info">
+      <div class="simple-page">
+        <h3>Наш пріоритет - ваша посмішка від задоволення</h3>
+        <p><strong>Monosushi</strong> – це доставка одного (mono) продукту. Суші вже давно не є заморським
+          делікатесом. Роли вже давно стали рядовою стравою, проте процес їх приготування всеодно залишається цілим
+          мистецтвом. Суші потрібно готувати за чіткою технологією суворо дотримуючись традицій. І в цьому ми справжні
+          експерти! Сумніваєтесь? Тоді замовляйте безкоштовну доставку Monosushi і насолоджуйтесь.</p>
+      </div>
+    </div>
+  </div>
+  <div class="row bigrow">
+    <h3 class="title text-center">Наші переваги</h3>
+    <div class="swiper-entry slider-advantages products_swiper">
+      <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide-active">
+            <div class="advantages-item">
+              <div class="advantages-item-img">
+                <img src="https://monosushi.com.ua/wp-content/uploads/2020/10/advantages-img-1.svg" alt=""> </div>
+              <div class="h5 title">Свіжі продукти</div>
+              <div class="text-sm text-cut-5">
+                <p>Наші інгредієнти ще вчора плавали у морі, а сьогодні вже у Ваших сушиках</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide-next">
+            <div class="advantages-item">
+              <div class="advantages-item-img">
+                <img src="https://monosushi.com.ua/wp-content/uploads/2020/10/advantages-img-2.svg" alt=""> </div>
+              <div class="h5 title">Неймовірний смак</div>
+              <div class="text-sm text-cut-5">
+                <p>Ми створили сушики, які змусять Ваші рецептори вибухнути від насолоди</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="advantages-item">
+              <div class="advantages-item-img">
+                <img src="https://monosushi.com.ua/wp-content/uploads/2020/10/advantages-img-3.svg" alt=""> </div>
+              <div class="h5 title">Великі порції</div>
+              <div class="text-sm text-cut-5">
+                <p>Ми віднайшли ідеальні порції ролів та завжди дотримуємось грамажу вказаного на сайті</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="advantages-item">
+              <div class="advantages-item-img">
+                <img src="https://monosushi.com.ua/wp-content/uploads/2020/10/advantages-img-4.svg" alt=""> </div>
+              <div class="h5 title">Чистота на кухні</div>
+              <div class="text-sm text-cut-5">
+                <p>Ми як ніхто інший розуміємо, що морепродукти потребують абсолютної чистоти на кухні</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <h3 class="title text-center">Популярні запитання</h3>
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-title" [class.active]="articleOpen1" (click)="openArticle1()">Як можна замовити, якщо наша адреса не входить у вашу зону
+          доставки?</div>
+        <div class="accordion-inner" *ngIf="articleOpen1">
+          <div class="text article">
+            <p>Якщо ваша адреса знаходиться поза межами нашої зони доставки, ви можете:</p>
+            <ol>
+              <li class="mb">Забрати замовлення самовивозом за однією з наших адрес. (В такому випадку ви отримаєте
+                “Запечені
+                моно макі з лососем у подарунок).</li>
+              <li>Дізнатись в оператора чи є можливість зробити виключення для доставки поза межі зони в даний
+                момент
+                часу.</li>
+            </ol>
+
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-title" [class.active]="articleOpen2" (click)="openArticle2()">Скільки часу очікувати на замовлення?</div>
+          <div class="accordion-inner" *ngIf="articleOpen2">
+            <div class="text article">
+              <p>Час доставки залежить від адреси замовлення.<br>
+                Доставка в зелену зону – до 1 год.<br>
+                Доставка в жовту зону – до 1,5 год.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-title" [class.active]="articleOpen3" (click)="openArticle3()">Доставка безкоштовна?</div>
+          <div class="accordion-inner" *ngIf="articleOpen3">
+            <div class="text article">
+              <p>Так, доставка безкоштовна при мінімальній сумі замовлення 200 грн в зелену зону доставки та 300 грн
+                в
+                жовту зону.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-title" [class.active]="articleOpen4" (click)="openArticle4()">До якої години ви приймаєте замовлення?</div>
+          <div class="accordion-inner" *ngIf="articleOpen4">
+            <div class="text article">
+              <p>Ми приймаємо замовлення кожного дня з 11:00 по 22:30.</p>
+            </div>
+          </div>
+        </div>
+        <div class="last"></div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,28 @@
+ <div class="container">
+   <ul class="nav">
+     <li [routerLink]="[ '/' ]"><span>Головна</span></li>
+     <li [routerLink]="[ '/discount' ]" routerLinkActive="route-active"><span>Акції</span></li>
+     <li class="active"><span>{{ discount?.name }}</span></li>
+   </ul>
+   <div class="row">
+     <div class="mini-banner bg-mono">
+       <div class="center-info">
+         <h2 class="title">{{ discount?.title }}</h2>
+       </div>
+     </div>
+   </div>
+   <div class="description">
+     <div class="simple-page">
+       <ul>
+         <li>{{discount.description | split:0 }}
+         </li>
+         <li>{{discount.description | split:1 }}
+         </li>
+         <li>{{discount.description | split:2 }}
+         </li>
+         <li>{{discount.description | split:3 }}
+         </li>
+       </ul>
+     </div>
+   </div>
+ </div>

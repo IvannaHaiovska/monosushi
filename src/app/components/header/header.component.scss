@@ -1,0 +1,416 @@
+::ng-deep * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95px;
+    z-index: 100;
+    background-color: #fff;
+    transition: .35s;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 0%);
+}
+.container-fluid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 95px;
+  justify-content: space-between;
+  font-family: 'RotondaC', sans-serif; 
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 42.3%;
+}
+
+.header-color-block {
+  background: #b5d8f7;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 167px;
+  padding-top: -4px;
+}
+
+.logoImg {
+  width: 136px;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbarSpace {
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-left: 15px;
+}
+
+.navbarSpace li {
+  width: 75px;
+  height: 70px;
+  text-align: center;
+}
+
+.nav-item a div img {
+  width: 28px;
+  height: 30px;
+}
+
+.navbarSpace li+li {
+  margin-left: 5px;
+}
+
+.nav-item a div {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  right: 10px;
+}
+
+a {
+  font-weight: bold;
+  font-size: .9em;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #252525;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+
+.navbarSpace a span {
+  font-size: 14px;
+  margin-top: 4px;
+  line-height: 1em;
+}
+
+.fa-bars {
+  font-size: 1.5em;
+  letter-spacing: 1.4em;
+  margin: 11px 5px 0;
+}
+
+.dropdown-menu {
+  width: 50px;
+  margin-left: 15px;
+  width: 50px;
+  height: 48px;
+  padding: 0 10px;
+  position: relative;
+}
+
+.dropdown {
+  padding: 0 16px 17px 24px;
+  background: #fff;
+  border: 2px solid #b5d8f7;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1000;
+  left: 37%;
+  top: 0;
+}
+
+.ham {
+  width: 50px;
+  height: 60px;
+  margin-top: 30px;
+}
+
+.fa-times {
+  margin-left: 22px;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.dropdown li {
+  max-width: 230px;
+  white-space: nowrap;
+  font-size: 18px;
+  line-height: 1em;
+  padding: 18px 18px;
+}
+
+.btnPhone {
+  padding: 5px 8px;
+  background: #b5d8f7;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  line-height: 1em;
+  text-transform: none;
+}
+
+.header-call-back img {
+  margin-right: 5px;
+}
+
+.header-call-back {
+  margin-left: -2px;
+}
+
+.header-call-back span {
+  font-size: 12px;
+  line-height: 1em;
+  font-weight: bold;
+  color: #252525;
+  vertical-align: 40%;
+}
+
+.btnPhone:hover {
+  background: #fff;
+  border: 2px solid #b5d8f7;
+}
+
+.header-info {
+  margin-left: -18px;
+  text-align: center;
+}
+
+.header-phone {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.header-phone:hover {
+  color: #b5d8f7;
+}
+
+.header-work-time {
+  font-size: 12px;
+  font-family: 'Rotonda', sans-serif;
+}
+
+.header-user {
+  padding: 10px 12px;
+  margin-left: -4px;
+}
+
+.header-basket {
+  display: flex;
+  width: 8%;
+  position: relative;
+}
+
+.header-basket i {
+  position: relative;
+  margin-right: 10px;
+}
+
+.header-basket i span {
+  font-size: 12px;
+  padding-top: 5px;
+  min-width: 22px;
+  height: 20px;
+  position: absolute;
+  right: -7px;
+  color: #252525;
+  line-height: 1em;
+  background-color: #fff;
+  border-radius: 100%;
+  text-align: center;
+  font-style: normal;
+}
+
+b {
+  padding-right: 3px;
+}
+.basket-price{
+  z-index: 1000;
+  font-family: 'Rotonda', sans-serif;
+}
+.header-basket:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: white;
+  transition: all 1s ease;
+}
+
+.header-basket.active:before {
+  height: 85px;
+  z-index: 0;
+}
+
+li,
+.dropdown-menu,
+.header-user {
+  box-sizing: border-box;
+  position: relative;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+  }
+}
+
+.border {
+  &::before,
+  &::after {
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    bottom: 0;
+    right: 0;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    width: 100%;
+    height: 100%;
+    border-radius: .7em;
+  }
+
+  &:hover::before {
+    border-top-color: #b5d8f7;
+    border-right-color: #b5d8f7;
+    transition:
+      width 0.1s ease-out,
+      height 0.1s ease-out 0.1s;
+  }
+
+  &:hover::after {
+    border-bottom-color: #b5d8f7;
+    border-left-color: #b5d8f7;
+    transition:
+      width 0.15s ease-out 0.15s,
+      height 0.25s ease-out 0.25s;
+  }
+}
+
+.cart {
+  position: absolute;
+  right: 0;
+  top: 92px;
+  width: 650px;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 340px;
+  border-top: 1px solid #dcdcdc;
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+}
+
+.cart-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-info img {
+  width: 100px;
+  margin: 22px -12px 2px 0;
+}
+
+.btn-close {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.title {
+  color: #252525;
+  font-weight: bold;
+  margin: 3px 0px 0 16px;
+}
+
+.h5 {
+  font-size: 20px;
+  line-height: 1.75em;
+}
+
+.btn-primary {
+  border: 2px solid #b5d8f7;
+  background: #b5d8f7;
+  margin: 0 0 0 0;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  padding: 16px 0px;
+  border-radius: 10px;
+  color: #252525;
+  width: 217px;
+  margin: 15px 0px;
+}
+
+.cart_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 97px;
+  background: #b5d8f7;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  padding: 0 18px;
+}
+
+.bg-mono {
+  background-color: #b5d8f7;
+  background-image: url('https://monosushi.com.ua/wp-content/themes/monosushi/img/bg-monosushi-logo.svg'), url('https://monosushi.com.ua/wp-content/themes/monosushi/img/bg-monosushi-logo.svg');
+  background-repeat: repeat;
+  background-position: 0 0, 190px -52px;
+}
+
+.cart_price-wrap {
+  display: flex;
+}
+
+.card-total-price {
+  font-size: 1.5em;
+  margin: -6px 0 0 2px;
+}
+
+.btn-secondary {
+  border-color: #dcdcdc;
+  background: #dcdcdc;
+  padding: 16px 8px 12px 23px;
+  border-radius: .5em;
+  font-size: .9em;
+  font-weight: bold;
+  width: 232px;
+}
+
+.grayBlock {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(75, 75, 75, 0.527);
+  position: fixed;
+  top: 92px;
+  z-index: 10;
+}
+

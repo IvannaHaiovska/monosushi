@@ -1,0 +1,43 @@
+<div class="category-block">
+  <button type="button" class="addBtn" (click)="openCategoryForm()">ДОДАТИ КАТЕГОРІЮ</button>
+  <form *ngIf="openCategory" [formGroup]="categoryForm" (ngSubmit)="addCategory()">
+    <div class="blockTop">
+      <input formControlName="name" name="name" type="text" class="form-control" placeholder="*Назва">
+      <input formControlName="path" name="path" type="text" class="form-control" placeholder="*Шлях">
+    </div>
+    <div class="blockBottom" *ngIf="!isUploaded">
+      <input class="form-control" type="file" id="formFile" (change)="upload($event)">
+    </div>
+    <div *ngIf="isUploaded" class="uploadImg">
+      <img [src]="valueByControl('imagePath')" alt="">
+      <button type="button" class="btnDelete" (click)="deleteImage()">delete</button>
+    </div>
+    <button [disabled]="categoryForm.invalid" type="submit" class="btnSave">Зберегти
+    </button>
+  </form>
+  <table>
+    <thead>
+      <tr>
+        <td>№</td>
+        <td>Назва</td>
+        <td>Шлях</td>
+        <td>Картинка</td>
+        <td>Дії</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let category of adminCategories">
+        <td class="number">№ {{ category.id }}</td>
+        <td class="name">{{ category.name }}</td>
+        <td class="bolder">{{ category.path }}</td>
+        <td>
+          <img [src]="category.imagePath" alt="" class="images">
+        </td>
+        <td class="flex">
+          <button (click)="editCategory(category)">Pедагувати </button>
+          <button (click)="deleteCategory(category)" [disabled]="editStatus">Bидалити</button>
+        </td>
+    </tbody>
+  </table>
+
+</div>

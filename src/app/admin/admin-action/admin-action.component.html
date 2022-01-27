@@ -1,0 +1,46 @@
+<div class="action-block">
+  <button type="button" class="addBtn" (click)="openDiscounForm()">ДОДАТИ АКЦІЮ</button>
+  <form *ngIf="openDiscount" [formGroup]="discountForm" (ngSubmit)="addDiscount()">
+    <div class="blockTop">
+      <input formControlName="name" name="name" type="text" class="form-control" placeholder="*Назва">
+      <input formControlName="title" name="title" type="text" class="form-control" placeholder="*Заголовок">
+    </div>
+    <textarea formControlName="description" name="description" type="text" class="form-control description"
+      placeholder="*Опис"></textarea>
+    <div class="blockBottom" *ngIf="!isUploaded">
+      <input class="form-control" type="file" id="formFile" (change)="upload($event)">
+    </div>
+    <div *ngIf="isUploaded" class="uploadImg">
+      <img [src]="valueByControl('imagePath')" alt="">
+      <button type="button" class="btnDelete" (click)="deleteImage()">delete</button>
+    </div>
+    <button [disabled]="discountForm.invalid" type="submit" class="btnSave">Зберегти
+    </button>
+  </form>
+  <table>
+    <thead>
+      <tr>
+        <td>Дата</td>
+        <td>Назва</td>
+        <td>Заголовок</td>
+        <td>Опис</td>
+        <td>Картинка</td>
+        <td>Дії</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let discount of adminDiscounts">
+        <td class="data">{{ discount.date | date: 'MM.YYYY' }}</td>
+        <td class="name">{{ discount.name }}</td>
+        <td class="bolder">{{ discount.title }}</td>
+        <td class="width">{{ discount.description| slice:0:52 }}
+          <span *ngIf="discount.description.length > 52">...</span>
+        </td>
+        <td class="widthimg"> <img [src]="discount.imagePath" alt="" class="images"></td>
+        <td class="flex">
+          <button (click)="editDiscount(discount)">Pедагувати </button>
+          <button (click)="deleteDiscount(discount)" [disabled]="editStatus">Bидалити</button>
+        </td>
+    </tbody>
+  </table>
+</div>

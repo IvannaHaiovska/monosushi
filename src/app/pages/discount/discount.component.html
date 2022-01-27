@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="center-info">
+    <h2 class="title">Акції</h2>
+  </div>
+  <div class="row">
+    <ng-container *ngIf="userDiscounts.length > 0">
+      <div class="card" [routerLink]="[ '/discount', discount.id ]" *ngFor="let discount of userDiscounts">
+        <div class="card-body">
+          <div class="card-img">
+            <img [src]="discount.imagePath" alt="...">
+          </div>
+          <div class="nameCard">{{discount.name}}</div>
+        </div>
+        <div class="line"></div>
+        <a class="btnMore">Дізнатись більше</a>
+      </div>
+    </ng-container>
+    <ng-container *ngIf="userDiscounts.length === 0">
+      <div class="text-center">
+        <h1>Акції не додані</h1>
+      </div>
+    </ng-container>
+  </div>
+</div>

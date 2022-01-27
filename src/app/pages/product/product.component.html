@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="center-info">
+    <h2 class="title">Продукти</h2>
+  </div>
+  <div class="nav">
+    <button class="nav-link active" type="button">Всі</button>
+    <button class="nav-link" type="button">Філадельфія</button>
+    <button class="nav-link" type="button">Каліфорнія</button>
+    <button class="nav-link" type="button">Запечені</button>
+    <button class="nav-link" type="button">Фірмові</button>
+    <button class="nav-link" type="button">Преміум</button>
+    <button class="nav-link" type="button">Макі</button>
+  </div>
+  <ng-container *ngIf="userProducts.length > 0">
+    <div class="content">
+      <div class="card border"  *ngFor="let product of userProducts">
+          <div class="product-img">
+            <img [src]="product.imagePath" alt="...">
+          </div>
+          <div class="product-name">{{product.name}}</div>
+          <div class="product-info">
+            <div class="product-ingredients">{{product.ingredients}}</div>
+            <div class="product-weight">{{product.weight}} г</div>
+          </div>
+          <div class="card-bottom">
+            <div class="product-price">{{product.price}}  <span>грн</span></div>
+            <div class="product-count">
+              <button type="button" class="decrement">-</button>
+              <input value="1" readonly="" class="product-qty" tabindex="-1" max="999">
+              <button type="button" class="increment">+</button>
+            </div>
+            <a class="btn-Order">Замовити</a>
+          </div>
+        </div>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="userProducts.length === 0">
+    <div class="text-center">
+      <h1>Акції не додані</h1>
+    </div>
+  </ng-container>
+</div>
