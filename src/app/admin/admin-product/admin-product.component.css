@@ -1,0 +1,182 @@
+.addBtn, .btnSave, .btnDelete {
+  background: white;
+  padding: 20px 71px;
+  font-family: 'RotondaC', sans-serif;
+  border: 2px solid #b5d8f7;
+  outline: none;
+  border-radius: .5em;
+  font-size: 20px;
+  line-height: 1.3em;
+}
+
+.addBtn:hover, .addBtn:focus {
+  background-color: #b5d8f7;
+}
+
+.uploadImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 0;
+}
+
+.uploadImg img {
+  width: 300px;
+  height: 200px;
+}
+
+.btnDelete {
+  width: 10%;
+  padding: 5px;
+  margin: 10px 0;
+  border: none;
+  background: rgba(221, 17, 17, 0.719);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 40px;
+  font-family: 'Rotonda', sans-serif;
+  color: #444444;
+}
+
+thead td {
+  border-bottom: 2.5px solid #b5d8f7;
+  padding: 10px 0px 21px 0;
+  font-size: 20px;
+  line-height: 1.3em;
+}
+
+tbody tr {
+  border-bottom: 2px solid #dddddd;
+  font-size: 18px;
+  line-height: 1.1em;
+  height: 124px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-top: 25px;
+}
+
+.number {
+  width: 12%;
+}
+
+.category {
+  width: 14%;
+}
+
+.name {
+  font-weight: 600;
+  width: 25%;
+  color: black;
+}
+
+.ingredients {
+  width: 14%;
+}
+
+.weight {
+  width: 11%;
+}
+
+.price {
+  width: 11%;
+}
+
+.widthimg {
+  width: 16%;
+}
+
+.images {
+  width: 88%;
+}
+
+.flex button {
+  font-family: 'RotondaC', sans-serif;
+  font-size: 21px;
+  line-height: 1.6em;
+  color: #b5d8f7;
+  position: relative;
+  border: none;
+  outline: none;
+  background: none;
+  width: 110px;
+}
+
+input, select {
+  height: 67px;
+  border-radius: 0.5em;
+  border: 2px solid rgba(206, 206, 206, 0.877);
+  font-size: 1.1em;
+  padding-left: 29px;
+  width: 29%;
+  margin-right: 13px;
+  outline: none;
+  margin-top: 20px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+input:focus, select:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 5px 2px lightskyblue;
+          box-shadow: 0 0 5px 2px lightskyblue;
+  border: 2px solid lightskyblue;
+}
+
+#formFile {
+  padding-top: 17px;
+  width: 59%;
+  font-size: 1.2em;
+}
+
+.w100 {
+  width: 59%;
+}
+
+.heightsmall {
+  height: 50px;
+  margin-top: 50px;
+}
+
+.btnSave {
+  padding: 19px 111px;
+  margin-top: 22px;
+  margin-bottom: 37px;
+  background-color: #dcecfc;
+}
+
+.flex button:after {
+  display: block;
+  content: "";
+  background-color: lightskyblue;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  position: absolute;
+  -webkit-transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+}
+
+.flex button:hover:after,
+.flex button:focus:after {
+  width: 100%;
+}
+/*# sourceMappingURL=admin-product.component.css.map */

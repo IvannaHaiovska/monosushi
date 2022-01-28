@@ -1,0 +1,161 @@
+.addBtn,
+.btnSave,
+.btnDelete {
+  background: white;
+  padding: 19px 59px;
+  font-family: 'RotondaC', sans-serif;
+  border: 2px solid #b5d8f7;
+  outline: none;
+  border-radius: .5em;
+  font-size: 20px;
+  line-height: 1.3em;
+}
+
+.addBtn:hover,
+.addBtn:focus {
+  background-color: #b5d8f7;
+}
+
+.uploadImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 0;
+}
+
+.uploadImg img {
+  width: 100px;
+  height: 100px;
+}
+
+.btnDelete {
+  width: 10%;
+  padding: 5px;
+  margin: 10px 0;
+  border: none;
+  background: rgba(221, 17, 17, 0.719);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 40px;
+  font-family: 'Rotonda', sans-serif;
+  color: #444444;
+}
+
+thead td {
+  border-bottom: 2.5px solid #b5d8f7;
+  padding: 10px 0px 21px 0;
+  font-size: 20px;
+  line-height: 1.3em;
+}
+
+tbody tr {
+  border-bottom: 2px solid #dddddd;
+  font-size: 18px;
+  line-height: 1.1em;
+  height: 123px;
+}
+
+.number {
+  width: 18%;
+}
+
+.name {
+  width: 18%;
+}
+
+.bolder {
+  font-weight: 600;
+  width: 34%;
+  color: black;
+}
+
+.images {
+  width: 30%;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-top: 25px;
+}
+
+.flex button {
+  font-family: 'RotondaC', sans-serif;
+  font-size: 21px;
+  line-height: 1.6em;
+  color: #b5d8f7;
+  width: 44px;
+  border: none;
+  outline: none;
+  background: none;
+  position: relative;
+}
+
+.blockTop {
+  margin: 48px 0 24px;
+}
+
+input {
+  height: 67px;
+  border-radius: 0.5em;
+  border: 2px solid rgba(206, 206, 206, 0.877);
+  font-size: 1.1em;
+  padding-left: 29px;
+  width: 30.3%;
+  margin-right: 18px;
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 5px 2px lightskyblue;
+          box-shadow: 0 0 5px 2px lightskyblue;
+  border: 2px solid lightskyblue;
+}
+
+#formFile {
+  margin: 0 0;
+  padding-top: 17px;
+  width: 62%;
+  font-size: 1.2em;
+}
+
+.btnSave {
+  padding: 19px 111px;
+  margin-top: 22px;
+  margin-bottom: 37px;
+  background-color: #dcecfc;
+}
+
+.flex button:after {
+  display: block;
+  content: "";
+  background-color: lightskyblue;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  position: absolute;
+  -webkit-transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+}
+
+.flex button:hover:after,
+.flex button:focus:after {
+  width: 250%;
+}
+/*# sourceMappingURL=admin-category.component.css.map */

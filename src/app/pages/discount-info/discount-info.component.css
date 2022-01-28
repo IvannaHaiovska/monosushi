@@ -1,0 +1,127 @@
+.container {
+  width: 100%;
+  max-width: 1750px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 119px;
+  font-family: 'Rotonda', sans-serif;
+  color: #5A5A5A;
+  margin-bottom: 139px;
+}
+
+.nav {
+  margin-bottom: 41px;
+  font-size: 12px;
+  line-height: 13px;
+  text-decoration: none;
+  margin-left: 61px;
+}
+
+.nav li {
+  position: relative;
+  display: inline-block;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+  text-transform: capitalize;
+}
+
+.nav li:nth-child(1)::after,
+.nav li:nth-child(2)::after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #5a5a5a;
+  margin: 0 10px 2px;
+  border-color: #5A5A5A;
+}
+
+.row {
+  width: 100%;
+}
+
+.mini-banner {
+  margin-left: 19.9em;
+  width: 58%;
+  height: 180px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.bg-mono {
+  background-color: #b5d8f7;
+  background-image: url("https://monosushi.com.ua/wp-content/themes/monosushi/img/bg-monosushi-logo.svg"), url("https://monosushi.com.ua/wp-content/themes/monosushi/img/bg-monosushi-logo.svg");
+  background-repeat: repeat;
+  background-position: 0 0, 190px -52px;
+}
+
+.center-info {
+  text-align: center;
+}
+
+.center-info {
+  margin: 0 auto;
+  max-width: 550px;
+  padding-top: 70px;
+}
+
+h2 {
+  font-size: 42px;
+  line-height: 1.3em;
+  color: black;
+  position: relative;
+  font-family: 'RotondaC', sans-serif;
+}
+
+.center-info .title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -12px;
+  border-radius: 10px;
+  width: 100%;
+  height: 5px;
+  background: #252525;
+}
+
+.simple-page {
+  position: relative;
+  font-size: 18.5px;
+  line-height: 1.8em;
+  padding-left: 24px;
+}
+
+.description {
+  margin: 56px 0 -20px 317px;
+}
+
+.simple-page li {
+  list-style: none;
+  position: relative;
+}
+
+.simple-page li::before {
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  left: -18px;
+  top: 11px;
+  border-radius: 100%;
+  background: #b5d8f7;
+  content: "";
+}
+
+.simple-page li::after {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: -17px;
+  top: 12px;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  background: transparent;
+  content: "";
+}
+/*# sourceMappingURL=discount-info.component.css.map */

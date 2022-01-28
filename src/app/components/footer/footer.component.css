@@ -1,0 +1,280 @@
+footer {
+  border-top: 4px solid #b5d8f7;
+  font-family: 'Rotonda', sans-serif;
+  height: 180px;
+}
+
+footer .footer-inner {
+  max-width: 100%;
+}
+
+.footer-top {
+  margin: 6px 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  width: 136px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  margin: 0 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 18%;
+}
+
+ul {
+  list-style: none;
+}
+
+.menu-list a {
+  font-size: 16px;
+  line-height: 1em;
+  color: #252525;
+}
+
+.footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 43%;
+  width: 100%;
+  line-height: 1.25em;
+  margin-top: -3px;
+}
+
+strong {
+  color: black;
+}
+
+.delivery-address {
+  font-size: 14px;
+  color: #5a5a5a;
+  text-align: center;
+}
+
+.order-phone {
+  font-size: 14px;
+  color: #5a5a5a;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.work-time {
+  font-size: 14px;
+  color: #5a5a5a;
+  text-align: center;
+}
+
+.footer-info > * + * {
+  margin-left: 20px;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social span {
+  margin-right: 20px;
+  font-size: 14px;
+  color: #252525;
+}
+
+.social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #5a5a5a;
+  white-space: nowrap;
+}
+
+.copyright p {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.pay-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15%;
+  margin-left: 8px;
+}
+
+.pay-card-item {
+  position: relative;
+  width: 69px;
+  height: 39px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.pay-card-item img {
+  max-width: 45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.pay-cards .pay-card-item + .pay-card-item {
+  margin-left: 5px;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social span {
+  margin-right: 20px;
+  font-size: 14px;
+  color: #252525;
+}
+
+.social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social span {
+  margin-right: 20px;
+  font-size: 16px;
+  color: #252525;
+}
+
+.icon-btn {
+  display: block;
+  width: 49px;
+  height: 49px;
+  background: #b5d8f7;
+  border: 2px solid #b5d8f7;
+  border-radius: 10px;
+  position: relative;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+  margin-right: 3px;
+}
+
+.icon-btn:hover {
+  background: #fff;
+  border: 2px solid #b5d8f7;
+}
+
+.icon-btn img {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+a.footer-logo {
+  position: relative;
+}
+
+.footer-logo span {
+  color: #5a5a5a;
+}
+
+.develope a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+  margin-top: 5px;
+}
+
+.footer-logo span:hover {
+  color: #b5d8f7;
+}
+
+a.footer-logo:before {
+  background: #ffffff url("https://monosushi.com.ua/wp-content/themes/monosushi/img/redstone-icon-black.svg");
+  background-repeat: no-repeat;
+  width: 75px;
+  background-position: right center;
+  background-size: 100%;
+  content: '';
+  right: 0px;
+  top: 0px;
+  position: absolute;
+  height: 100%;
+}
+
+.develope a span {
+  margin-right: 82px;
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
+/*# sourceMappingURL=footer.component.css.map */

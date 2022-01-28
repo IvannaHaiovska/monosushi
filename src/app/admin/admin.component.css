@@ -1,0 +1,65 @@
+.container {
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 170px 0 170px 0;
+}
+
+.admin-block {
+  width: 14%;
+  margin-right: 41px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav-link {
+  outline: none;
+  border: none;
+  border-top: 2px solid #dcdcdc;
+  border-right: 1px solid #dcdcdce8;
+  background-color: white;
+  font-family: 'Rotonda', sans-serif;
+  color: #5A5A5A;
+  font-size: 20px;
+  line-height: 1.3em;
+  padding: 21px 20px;
+}
+
+.active {
+  border-right: none;
+  border-top: 5px solid #b5d8f7;
+  font-family: 'RotondaC', sans-serif;
+  color: black;
+}
+
+.borderb {
+  border-bottom: 2px solid #dcdcdc;
+}
+
+.exit {
+  background: #b5d8f7;
+  margin: 38px 0 0 42px;
+  padding: 20px 28px;
+  font-family: 'RotondaC', sans-serif;
+  border: none;
+  outline: none;
+  border-radius: .5em;
+  font-size: 20px;
+  line-height: 1.3em;
+}
+
+.content {
+  width: 86%;
+}
+/*# sourceMappingURL=admin.component.css.map */

@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'RotondaC';
+  src: url("./shared/fonts/rotondac-bold.woff");
+}
+
+@font-face {
+  font-family: 'Rotonda';
+  src: url("./shared/fonts/rotondac.woff");
+}
+/*# sourceMappingURL=app.component.css.map */
