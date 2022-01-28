@@ -258,6 +258,7 @@ li,
     box-sizing: inherit;
     content: '';
     position: absolute;
+    z-index: -1;
   }
 }
 
