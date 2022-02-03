@@ -1,0 +1,193 @@
+.container {
+    width: 100%;
+    max-width: 1750px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 119px;
+    font-family: 'Rotonda', sans-serif;
+    color: #5A5A5A;
+    margin-bottom: 139px;
+  }
+
+.nav {
+    margin-bottom: 41px;
+    font-size: 12px;
+    line-height: 13px;
+    text-decoration: none;
+    margin-left: 61px;
+  }
+  
+  .nav li {
+    position: relative;
+    display: inline-block;
+    transition: 0.35s;
+    text-transform: capitalize;
+  }
+  
+  .nav li:nth-child(1)::after,
+  .nav li:nth-child(2)::after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #5a5a5a;
+    margin: 0 10px 2px;
+    border-color: #5A5A5A;
+  }
+
+
+.card {
+  position: relative;
+  cursor: pointer;
+  height:100%;
+  width: 70%;
+  padding: 20px;
+  transition: 0.35s;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+  line-height: 1.3em;
+}
+
+.product-img {
+  position: relative;
+  height: 400px;
+  width: 55%;
+  margin-right: 8%;
+}
+
+.image {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  position: absolute;
+  display: inline-block;
+  max-width: 99%;
+  max-height: 97%;
+  align-self:center;
+}
+
+.right-block{
+  margin-top: 40px;
+    font-size: 18px;
+    line-height: 1.4em;
+    width: 50%;
+}
+.product-weight{
+    margin: 7px 0 41px
+}
+.product-name {
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 1.2em;
+  color: #252525;
+  font-family: 'RotondaC', sans-serif;
+  margin: 51px 0 14px;
+}
+.right-block span{
+    color: #b5d8f7;
+    font-family: 'RotondaC', sans-serif;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-ingredients{
+    width: 80%;
+}
+.product-price {
+  color: #252525;
+  font-weight: 400;
+  font-size: 20px;
+  width: 84px;
+  font-family: 'RotondaC', sans-serif;
+}
+
+.product-price span {
+  font-family: 'Rotonda', sans-serif;
+  color: #252525;
+}
+
+.product-count {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  color: #252525;
+  font-size: 16px;
+  line-height: 16px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.product-count button:first-child {
+  font-size: 30px;
+}
+
+.product-count button {
+  width: 27px;
+  height: 36px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  transition: 0.35s;
+  font-size: 24px;
+  line-height: 24px;
+  color: #5a5a5a;
+  background-color: #fff;
+  border-radius: 10px;
+  padding-bottom: 2px;
+  margin: 4px;
+}
+
+.product-count .increment {
+  padding-top: 5px;
+}
+
+.product-count input {
+  width: 35px;
+  height: 44px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-family: 'RotondaC', sans-serif;
+  font-size: 16px;
+}
+
+.btn-Order {
+  border: 2px solid #b5d8f7;
+  background: #b5d8f7;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: .35s;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: 'RotondaC', sans-serif;
+  padding: 11px 15px;
+  border-radius: 10px;
+  color: #252525;
+}
+
+
+.product-count button:hover {
+  background-color: #b5d8f7;
+}
+
+.btn-Order:hover {
+  background-color: white;
+}

@@ -16,7 +16,7 @@
              </a>
            </li>
            <li class="nav-item border">
-             <a [routerLink]="[ '/product/roli/' ]" routerLinkActive="route-active">
+             <a [routerLink]="[ '/product/rolls/' ]" routerLinkActive="route-active">
                <div>
                  <img src="https://monosushi.com.ua/wp-content/uploads/2020/10/nav-img-rolls.svg" alt="">
                  <span>Роли</span>
@@ -54,14 +54,17 @@
            <div class="ham" (click)="close()"><i class="fas fa-times"></i></div>
            <div>
              <li>
-               <a [routerLink]="[ '/delivery-payment' ]" routerLinkActive="route-active" class="dropdown-item" (click)="close()">Доставка
+               <a [routerLink]="[ '/delivery-payment' ]" routerLinkActive="route-active" class="dropdown-item"
+                 (click)="close()">Доставка
                  та оплата</a>
              </li>
              <li>
-               <a [routerLink]="[ '/about' ]" routerLinkActive="route-active" class="dropdown-item" (click)="close()">Про нас</a>
+               <a [routerLink]="[ '/about' ]" routerLinkActive="route-active" class="dropdown-item"
+                 (click)="close()">Про нас</a>
              </li>
              <li>
-               <a [routerLink]="[ '/discount' ]" routerLinkActive="route-active" class="dropdown-item" (click)="close()">Акції</a>
+               <a [routerLink]="[ '/discount' ]" routerLinkActive="route-active" class="dropdown-item"
+                 (click)="close()">Акції</a>
              </li>
            </div>
          </ul>
@@ -79,43 +82,63 @@
          <div class="header-work-time">Працюємо з <b>11:00</b> до <b>23:59</b></div>
        </div>
 
-       <div class="header-user border"  [routerLink]="[ '/admin' ]" routerLinkActive="route-active" >
+       <div class="header-user border" [routerLink]="[ '/admin' ]" routerLinkActive="route-active">
          <img src="https://monosushi.com.ua/wp-content/themes/monosushi/img/user.svg" alt="">
        </div>
 
-       <div class="header-basket header-color-block" [class.active]="basketCartStatus"  (click)="basketOpen()">
+       <div class="header-basket header-color-block" [class.active]="basketCartStatus" (click)="basketOpen()">
          <i>
            <img src="https://monosushi.com.ua/wp-content/themes/monosushi/img/basket.svg" alt="basket">
-           <span>0</span>
+           <span>{{count}}</span>
          </i>
          <div class="basket-price">
-           <b class="card-price">0</b>
+           <b class="card-price">{{ total }}</b>
            <span>грн</span>
          </div>
        </div>
        <div class="cart" *ngIf="basketCartStatus">
          <div>
            <div>
-             <div class="cart-info">
+             <div class="cart-info" *ngIf="basketProducts.length === 0">
                <div>
                  <img src="https://monosushi.com.ua/wp-content/themes/monosushi/img/icons/cart-empty-img.svg" alt="">
                </div>
                <div class="title h5">Кошик порожній</div>
-               <a class="btn btn-primary" >Перейти до каталогу</a>
+               <a class="btn btn-primary" [routerLink]="[ '/' ]" (click)="closeBasket()">Перейти до каталогу</a>
              </div>
-
+             <div *ngIf="basketProducts.length > 0">
+               <div class="cardProduct" *ngFor="let product of basketProducts">
+                 <div class="product-img">
+                   <div class="image">
+                     <img [src]="product.imagePath" alt="...">
+                   </div>
+                 </div>
+                 <div class="right-block">
+                   <div class="product-name">{{product.name}}</div>
+                   <div class="product-count">
+                     <button type="button" class="decrement" (click)="productCount(product, false)">-</button>
+                     <input class="product-qty" [value]="product.count">
+                     <button type="button" class="increment" (click)="productCount(product, true)">+</button>
+                   </div>
+                   <div class="product-price">{{ product.price * product.count }} <span>грн</span></div>
+                   <div class="product-delete">
+                     <button type="button" (click)="deleteBasketItem(product.id)" class="btn-close remove-product" data-key="d490d7b4576290fa60eb31b5fc917ad1">
+                       <div class="trash"></div>
+                     </button>
+                   </div>
+                 </div>
+               </div>
+             </div>
            </div>
            <div class="cart_bottom bg-mono">
              <div class="cart_price-wrap">
-               Сума: <b class="card-total-price">0</b> грн </div>
-               <div class="btn-secondary">
-                  <p>ОФОРМИТИ
-               ЗАМОВЛЕННЯ</p>
-               </div>
+               Сума: <b class="card-total-price">{{ total }}</b> грн </div>
+             <button class="btn-secondary" (click)="MakeOrder()">ОФОРМИТИ
+               ЗАМОВЛЕННЯ</button>
            </div>
          </div>
        </div>
      </div>
    </nav>
  </header>
- <div class="grayBlock" *ngIf="grayBlock" (click)=" closeBasket()" ></div>
+ <div class="grayBlock" *ngIf="grayBlock" (click)=" closeBasket()"></div>

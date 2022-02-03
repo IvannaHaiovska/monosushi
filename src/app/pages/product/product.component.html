@@ -1,8 +1,9 @@
 <div class="container">
+  <div class="roll" *ngFor="let product of userProducts">
   <div class="center-info">
-    <h2 class="title">Продукти</h2>
+    <h2 class="title"  *ngIf="categoryName!=null">{{ product.category.name }}</h2>
   </div>
-  <div class="nav">
+  <div class="nav" *ngIf="product.category.name === 'Роли'">
     <button class="nav-link active" type="button">Всі</button>
     <button class="nav-link" type="button">Філадельфія</button>
     <button class="nav-link" type="button">Каліфорнія</button>
@@ -11,25 +12,29 @@
     <button class="nav-link" type="button">Преміум</button>
     <button class="nav-link" type="button">Макі</button>
   </div>
+</div>
   <ng-container *ngIf="userProducts.length > 0">
     <div class="content">
       <div class="card border"  *ngFor="let product of userProducts">
-          <div class="product-img">
-            <img [src]="product.imagePath" alt="...">
+        <div class="new-product"></div>
+          <div class="product-img" [routerLink]="[ '/product/'+product.category.path, product.id ]">
+            <div class="image">
+               <img [src]="product.imagePath" alt="...">
+            </div>
           </div>
-          <div class="product-name">{{product.name}}</div>
+          <div class="product-name" [routerLink]="[ '/product/'+product.category.path, product.id ]">{{product.name}}</div>
           <div class="product-info">
-            <div class="product-ingredients">{{product.ingredients}}</div>
-            <div class="product-weight">{{product.weight}} г</div>
+            <div class="product-ingredients" *ngIf="product.category.name =='Роли' || product.category.name =='Сети'">{{product.ingredients}}</div>
+            <div class="product-weight">{{product.weight}}</div>
           </div>
           <div class="card-bottom">
-            <div class="product-price">{{product.price}}  <span>грн</span></div>
+            <div class="product-price">{{ product.price * product.count }} <span>грн</span></div>
             <div class="product-count">
-              <button type="button" class="decrement">-</button>
-              <input value="1" readonly="" class="product-qty" tabindex="-1" max="999">
-              <button type="button" class="increment">+</button>
+              <button type="button" class="decrement" (click)="productCount(product, false)">-</button>
+              <input [value]="product.count" class="product-qty">
+              <button type="button" class="increment" (click)="productCount(product, true)">+</button>
             </div>
-            <a class="btn-Order">Замовити</a>
+            <a class="btn-Order" (click)="addToBasket(product)" >Замовити</a>
           </div>
         </div>
     </div>

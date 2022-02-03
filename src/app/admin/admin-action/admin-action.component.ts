@@ -43,9 +43,7 @@ export class AdminActionComponent implements OnInit {
 
 
   loadDiscounts(): void {
-
     this.discountService.getAll().subscribe(data => {
-      console.log(data);
       this.adminDiscounts = data;
     })
 

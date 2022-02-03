@@ -1,0 +1,32 @@
+<div class="container">
+  <ul class="nav">
+    <li [routerLink]="[ '/' ]"><span>Головна</span></li>
+    <li [routerLink]="[ '/product/rolls/' ]" routerLinkActive="route-active"><span>{{currentProduct.category.name}}</span></li>
+    <li class="active"><span>{{ currentProduct?.name }}</span></li>
+  </ul>
+  <div class="card">
+    <div class="product-img">
+      <div class="image">
+        <img [src]="currentProduct.imagePath" alt="...">
+      </div>
+    </div>
+    <div class="right-block">
+      <div class="product-name">{{currentProduct.name}}</div>
+      <div class="product-ingredients" *ngIf="currentProduct.category.name =='Роли' || currentProduct.category.name =='Сети'">
+        <span>Склад:</span>
+        {{currentProduct.ingredients}}</div>
+      <div class="product-weight">
+        <span>Вага:</span>
+        {{currentProduct.weight}}</div>
+      <div class="card-bottom">
+        <div class="product-price">{{ currentProduct.price * currentProduct.count }} <span>грн</span></div>
+        <div class="product-count">
+          <button type="button" class="decrement" (click)="productCount(currentProduct, false)">-</button>
+          <input class="product-qty"[value]="currentProduct.count">
+          <button type="button" class="increment"(click)="productCount(currentProduct, true)" >+</button>
+        </div>
+        <a class="btn-Order" (click)="addToBasket(currentProduct)">Замовити</a>
+      </div>
+    </div>
+  </div>
+</div>

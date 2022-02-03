@@ -15,14 +15,20 @@ import { AdminCategoryComponent } from './admin/admin-category/admin-category.co
 import { AdminProductComponent } from './admin/admin-product/admin-product.component';
 import { AdminActionComponent } from './admin/admin-action/admin-action.component';
 import { AdminOrderComponent } from './admin/admin-order/admin-order.component';
-
+import { ProductInfoResolver } from './shared/services/product/product-info.resolver';
+import { DiscountInfoResolver } from './shared/services/discount/discount-info.resolver';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'discount', component: DiscountComponent },
-  { path: 'discount/:id', component: DiscountInfoComponent },
+  { path: 'discount/:id', component: DiscountInfoComponent,
+  resolve: {
+    discountInfo: DiscountInfoResolver
+  } },
   { path: 'product/:category', component: ProductComponent },
-  { path: 'product/:path', component: ProductComponent },
+  { path: 'product/:category/:id', component: ProductInfoComponent, resolve: {
+    productInfo: ProductInfoResolver
+  } },
   { path: 'offerta', component: OffertaComponent },
   { path: 'about', component: AboutComponent },
   { path: 'delivery-payment', component: DeliveryPaymentComponent},

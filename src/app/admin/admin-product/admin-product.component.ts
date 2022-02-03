@@ -7,6 +7,7 @@ import { ProductService } from 'src/app/shared/services/product/product.service'
 import { ImageService } from 'src/app/shared/services/image/image.service';
 
 
+
 @Component({
   selector: 'app-admin-product',
   templateUrl: './admin-product.component.html',
@@ -58,9 +59,10 @@ export class AdminProductComponent implements OnInit {
   }
 
   loadProducts(): void {
-    this.productService.getAll().subscribe(data => {
+    this.productService.getAll().subscribe(data => {     
       this.adminProducts = data;
     })
+
   }
 
   addProduct(): void {
@@ -73,8 +75,9 @@ export class AdminProductComponent implements OnInit {
         this.loadProducts();
       })
     }
+
     this.editStatus = false;
-    this.productForm.reset();
+    this.productForm.reset({count:1});
     this.isUploaded = false;
     this.openProduct = false;
 
@@ -98,6 +101,7 @@ export class AdminProductComponent implements OnInit {
 
   deleteProduct(product: IProductResponse): void {
     this.productService.delete(product.id).subscribe(() => {
+      product.id = product.id-1;
       this.loadProducts();
     })
   }
@@ -134,7 +138,7 @@ export class AdminProductComponent implements OnInit {
 
   openProductForm(): void {
     this.openProduct = !this.openProduct;
-    this.productForm.reset();
+    this.productForm.reset({count:1});
     this.isUploaded = false;
   }
 }

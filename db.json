@@ -62,11 +62,59 @@
       "name": "Філадельфія з лососем",
       "path": "filadelfiya-z-lososem",
       "ingredients": "Риc, крем сир, огірок, лосось",
-      "weight": 280,
+      "weight": "280 г",
       "price": 174,
-      "imagePath": "https://firebasestorage.googleapis.com/v0/b/monosushi-4e38a.appspot.com/o/images%2F1.-filadelfiya-z-lososem.jpg.pagespeed.ce.axvTz8qDqj.jpg?alt=media&token=634a91e5-812c-42eb-a045-e2fe2e115a9c",
-      "count": null,
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/monosushi-4e38a.appspot.com/o/images%2F1.-filadelfiya-z-lososem.jpg.pagespeed.ce.axvTz8qDqj.jpg?alt=media&token=c0827be9-a1fc-4a64-b2f0-568a041a915e",
+      "count": 1,
+      "id": 1
+    },
+    {
+      "category": {
+        "name": "Сети",
+        "path": "setu",
+        "imagePath": "https://firebasestorage.googleapis.com/v0/b/monosushi-4e38a.appspot.com/o/images%2Fnav-img-sets.svg?alt=media&token=be755529-f103-4265-9642-78057301d3e3",
+        "id": 2
+      },
+      "name": "Запечений сет",
+      "path": "product/zapechenyj-set-2",
+      "ingredients": "Запечений сирний з креветкою Запечений моно з лососем",
+      "weight": "680 г",
+      "price": 400,
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/monosushi-4e38a.appspot.com/o/images%2F1.-zapechenyj-set.jpg.pagespeed.ce.Vf2MB24lsU.jpg?alt=media&token=914864f0-1a97-4f89-8717-b46c4acc3462",
+      "count": 1,
       "id": 2
+    },
+    {
+      "category": {
+        "name": "Напої",
+        "path": "napoyi",
+        "imagePath": "https://firebasestorage.googleapis.com/v0/b/monosushi-4e38a.appspot.com/o/images%2Fnav-img-drinks.svg?alt=media&token=e47a6370-716b-4143-9bba-47c578de62c3",
+        "id": 3
+      },
+      "name": "Coca-Cola",
+      "path": "coca-cola",
+      "ingredients": "0",
+      "weight": "0.5  л",
+      "price": 24,
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/monosushi-4e38a.appspot.com/o/images%2Fcoca_cola.png.pagespeed.ce.Ia-O7A4NSX.png?alt=media&token=91973bdc-6064-4496-8f6c-432c83a2a36e",
+      "count": 1,
+      "id": 3
+    },
+    {
+      "category": {
+        "name": "Соуси",
+        "path": "sousi",
+        "imagePath": "https://firebasestorage.googleapis.com/v0/b/monosushi-4e38a.appspot.com/o/images%2Fnav-img-sousi.svg?alt=media&token=d41d8590-d0bd-4ce5-9abf-d73c771e128c",
+        "id": 4
+      },
+      "name": "Імбир",
+      "path": "imbyr",
+      "ingredients": "0",
+      "weight": "30 г",
+      "price": 9,
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/monosushi-4e38a.appspot.com/o/images%2F3333.png.pagespeed.ce.vQR20Z8Iaq.png?alt=media&token=bbee69b9-b6d8-4fef-82f7-ce8b7295618a",
+      "count": 1,
+      "id": 4
     }
   ]
 }
